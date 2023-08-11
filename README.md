@@ -15,5 +15,12 @@ Docker環境上で以下の2つに対応したコンテナを用意し、docker-
 
 ## 画面
 ・アンケートフォーム
+![スクリーンショット 2023-08-12 1 33 52](https://github.com/ssizawa/benesse_hackathon/assets/107198960/b966be3d-a099-4f61-a0a0-6057d5519fc6)
 
 ・推薦一覧
+![スクリーンショット 2023-08-12 1 34 40](https://github.com/ssizawa/benesse_hackathon/assets/107198960/909fffa7-c2da-4bad-b46d-ceb34448dcb1)
+
+## 使用方法
+起動：docker-compose up -d --build
+
+停止：docker-compose down
