@@ -1,0 +1,99 @@
+#center{
+    width: 60%;
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+h1 {
+    position: relative;
+    padding: 0.5em;
+    background: #5A5A5A;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    width: 70%;
+    left:15%
+  }
+  
+  h1::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 15px transparent;
+    border-right: solid 20px rgb(149, 158, 155);
+  }
+
+  h3 {
+    position: relative;
+    padding: 0.25em 0;
+    width: 20%;
+  }
+  h3:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+  }
+  
+  
+/* h1{
+    text-align: center;
+    margin-top: 10px;
+    width: 70%;
+    left:15%
+} */
+
+input[type=radio] {
+    display: none; /* ラジオボタンを非表示にする */
+}
+input[type="radio"]:checked + label {
+    background: #959390;/* マウス選択時の背景色を指定する */
+    color: #ffffff; /* マウス選択時のフォント色を指定する */
+}
+label:hover {
+    background-color: #d6d8db; /* マウスオーバー時の背景色を指定する */
+}
+label {
+    display: block; /* ブロックレベル要素化する */
+    float: left; /* 要素の左寄せ・回り込を指定する */
+    margin: 5px; /* ボックス外側の余白を指定する */
+    width: 120px; /* ボックスの横幅を指定する */
+    height: 45px; /* ボックスの高さを指定する */
+    padding-left: 5px; /* ボックス内左側の余白を指定する */
+    padding-right: 5px; /* ボックス内御右側の余白を指定する */
+    color: #b77d08; /* フォントの色を指定 */
+    text-align: center; /* テキストのセンタリングを指定する */
+    line-height: 45px; /* 行の高さを指定する */
+    cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+    border: 2px solid #5A5A5A;/* ボックスの境界線を実線で指定する */
+    border-radius: 30px; /* 角丸を指定する */
+}
+
+#button1{
+    text-align: center;
+    margin-bottom: 40px;
+    width: 115px;
+    height: 58px;
+    background: #EDAA28;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    color: #FFFFFF;
+}
+#button1:hover{
+    box-shadow: 0 4px 7px 0 rgba(104, 70, 17, 0.5);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}

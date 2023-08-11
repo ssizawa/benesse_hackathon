@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="../static/css/form.css">
+  <link rel="stylesheet" href="../static/css/sidebar.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+  <title>Rec Form</title>
+</head>
+<body>
+  <header>
+      <div id="trigger-box">
+          <button type="button" id="trigger"><i class="bi bi-arrow-right-circle fa fa-bars" style="color:white;" id="right"></i></button>
+      </div>
+      <div id="user-box">
+        <i class="bi bi-person-fill fa fa-user" id="user"></i><span> {{ user_name }}</span>
+        <i class="bi bi-person-fill fa fa-star" id="user"></i><span> {{ user_point }} pt</span>
+      </div>
+  </header>
+
+  <aside id="sidemenu">
+    <ul>
+        <li><div id="close-box"><button type="button" id="trigger-close"><i class="bi bi-arrow-left-circle fa fa-angle-double-left" style="color:white;" id="left"></i></button></div></li>
+        <li><div id="side-item1"><i class="fa fa-home" id="home"></i>ホーム</div></li>
+        <li><div id="side-item2"><i class="fa fa-magic" id="setting"></i>Rec Form</div></li>
+        <li><div id="side-item3"><i class="fa fa-file" id="setting"></i>運用実績</div></li>
+        <li><div id="side-item4"><i class="fa fa-signal" id="setting"></i>相関関係</div></li>
+        <li><div id="side-item5"><i class="fa fa-shopping-cart" id="setting"></i>ポイント交換</div></li>
+    </ul>
+  </aside>
+
+  <h1>Rec Form</h1>
+
+  <form action="/home" method="POST">
+    <br>
+    <ul id="center">
+      <li>
+        <h3>職</h3>
+        <input id="hi-school" type="radio" name="c1" value="1" checked> 
+        <label for="hi-school">高校生</label>
+        <input id="university" type="radio" name="c1" value="2">
+        <label for="university">大学生</label>
+        <input id="society" type="radio" name="c1" value="3">
+        <label for="society">社会人</label>
+      
+        <br>
+        <br>
+        <br>
+
+        <h3>収入</h3>
+        <input id="10" type="radio" name="c2" value="1" checked>
+        <label for="10">10万円以下</label>
+        <input id="100" type="radio" name="c2" value="2" >
+        <label for="100">100万円以下</label>
+        <input id="300" type="radio" name="c2" value="3" >
+        <label for="300">300万円以下</label>
+        <input id="700" type="radio" name="c2" value="4" >
+        <label for="700">700万円以下</label>
+        <input id="1000" type="radio" name="c2" value="5" >
+        <label for="1000">1000万円以下</label>
+        <input id="1000up" type="radio" name="c2" value="6" >
+        <label for="1000up">1000万円以上</label>
+        <br>
+        <br>
+        <br>
+        <h3>学んだ期間</h3>
+        <input id="none" type="radio" name="c3" value="1" checked>
+        <label for="none">なし</label>
+        <input id="1term" type="radio" name="c3" value="2" >
+        <label for="1term">1年未満</label>
+        <input id="3term" type="radio" name="c3" value="3" >
+        <label for="3term">3年未満</label>
+        <input id="3termup" type="radio" name="c3" value="4" >
+        <label for="3termup">3年以上</label>
+        <br>
+        <br>
+        <br>
+        <h3>想定期間</h3>
+        <input id="short" type="radio" name="c4" value="1" checked>
+        <label for="short">短期間</label>
+        <input id="mid" type="radio" name="c4" value="2" >
+        <label for="mid">中期間</label>
+        <input id="long" type="radio" name="c4" value="3" >
+        <label for="long">長期間</label>
+        <br>
+        <br>
+        <br>
+        <h3>リスク</h3>
+        <input id="hi" type="radio" name="c5" value="1" checked>
+        <label for="hi">ハイリスク</label>
+        <input id="low" type="radio" name="c5" value="2" >
+        <label for="low">ローリスク</label>
+        <br>
+        <br>
+        <br>
+        <h3>投資経験</h3>
+        <input id="ex" type="radio" name="c6" value="1" checked>
+        <label for="ex">なし</label>
+        <input id="noex" type="radio" name="c6" value="2" >
+        <label for="noex">あり</label>
+        <br>
+        <br>
+        <br>
+        <h3>運用資金</h3>
+        <input id="m1" type="radio" name="c7" value="1" checked>
+        <label for="m1">1万円以下</label>
+        <input id="m10" type="radio" name="c7" value="2" >
+        <label for="m10">10万円以下</label>
+        <input id="m100" type="radio" name="c7" value="3" >
+        <label for="m100">100万円以下</label>
+        <input id="m500" type="radio" name="c7" value="4" >
+        <label for="m500">500万円以下</label>
+        <input id="m1000" type="radio" name="c7" value="5" >
+        <label for="m1000">1000万円以下</label>
+        <input id="m1000up" type="radio" name="c7" value="6" >
+        <label for="m1000up">1000万円以上</label>
+        <br>
+        <br>
+
+        <br>
+        <div class="center">
+          <input type="submit" id="button1" value="回答" />
+        </div>
+        </li>
+    </ul>
+  </form>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../static/javascript/form.js"></script>
+</body>
+</html>
