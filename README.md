@@ -1,1 +1,3 @@
 # benesse_hackathon
+benesseハッカソンで作成した個人のニーズや状況を考慮した教育コンテンツ推薦アプリ
+## benesse_hackathon
