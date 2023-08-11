@@ -1,0 +1,119 @@
+body{
+    background-color: lightgray;
+    /* opacity: 0.5; */
+}
+
+img, p {
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-size: 100%;
+    line-height: 1;
+}
+
+.center{
+    
+    width: 50%;
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.card1 {
+    
+    width: 100%;
+    margin: 20px;
+    /* border-radius: 5px; */
+    /* background-color: #fff;
+    box-shadow: 0 3px 6px #ccc; */
+}
+.image1 {
+    border: 5px solid #5A5A5A;
+    width: 100%;
+    /* height: 200px; */
+    object-fit: cover;
+    /* border-radius: 5px 5px 0 0; */
+}
+.title1 {
+    font-size: 150%;
+    margin: 10px;
+    /* color: #444; */
+}
+.content1 {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    /* color: #666; */
+}
+
+
+.rate-form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .rate-form input[type=radio] {
+    display: none;
+  }
+  .rate-form label {
+    position: relative;
+    padding: 0 5px;
+    color: #b0afaf;
+    cursor: pointer;
+    font-size: 35px;
+  }
+  .rate-form label:hover {
+    color: yellow;
+  }
+  .rate-form label:hover ~ label {
+    color: yellow;
+  }
+  .rate-form input[type=radio]:checked ~ label {
+    color: yellow;
+  }
+
+#button1{
+    margin-left: 30px;
+    margin-bottom: 40px;
+    width: 100px;
+    height: 45px;
+    background: #EDAA28;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    color: #FFFFFF;
+}
+#button1:hover{
+    box-shadow: 0 4px 7px 0 rgba(104, 70, 17, 0.5);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+#span1{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+p.title2 {
+    font-size: 150%;
+    font-weight: 500;
+    position: relative;
+    padding: 0.25em 0;
+    width: 60%;
+  }
+  p.title2:after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+    background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+  }
+
+  .position{
+    margin-left: 20px;
+  }

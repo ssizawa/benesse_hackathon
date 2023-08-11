@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="../static/css/graph.css">
+  <link rel="stylesheet" href="../static/css/sidebar.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/reset.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+  <title>相関係数</title>
+</head>
+<body>
+  <header>
+      <div id="trigger-box">
+          <button type="button" id="trigger"><i class="bi bi-arrow-right-circle fa fa-bars" style="color:white;" id="right"></i></button>
+      </div>
+      <div id="user-box">
+        <i class="bi bi-person-fill fa fa-user" id="user"></i><span> {{ user_name }}</span>
+        <i class="bi bi-person-fill fa fa-star" id="user"></i><span> {{ user_point }} pt</span>
+      </div>
+  </header>
+
+  <aside id="sidemenu">
+    <ul>
+        <li><div id="close-box"><button type="button" id="trigger-close"><i class="bi bi-arrow-left-circle fa fa-angle-double-left" style="color:white;" id="left"></i></button></div></li>
+        <li><div id="side-item1"><i class="fa fa-home" id="home"></i>ホーム</div></li>
+        <li><div id="side-item2"><i class="fa fa-magic" id="setting"></i>Rec Form</div></li>
+        <li><div id="side-item3"><i class="fa fa-file" id="setting"></i>運用実績</div></li>
+        <li><div id="side-item4"><i class="fa fa-signal" id="setting"></i>相関関係</div></li>
+        <li><div id="side-item5"><i class="fa fa-shopping-cart" id="setting"></i>ポイント交換</div></li>
+    </ul>
+  </aside>
+
+  <img src="../static/image/graph1.png" alt="">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../static/javascript/menu.js"></script>
+</body>
+</html>

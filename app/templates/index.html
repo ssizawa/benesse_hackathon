@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/sidebar.css">
+        <link rel="stylesheet" href="../static/css/index.css">
+        <link rel="stylesheet" href="../static/css/reset.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+        <title>index</title>
+    </head>
+    <body>
+        <header>
+            <div id="trigger-box">
+                <button type="button" id="trigger"><i class="bi bi-arrow-right-circle fa fa-bars" style="color:white;" id="right"></i></button>
+            </div>
+            <div id="user-box">
+                <i class="bi bi-person-fill fa fa-user" id="user"></i><span> {{ user_name }}</span>
+                <i class="bi bi-person-fill fa fa-star" id="user"></i><span> {{ user_point }} pt</span>
+            </div>
+        </header>
+      
+        <aside id="sidemenu">
+            <ul>
+                <li><div id="close-box"><button type="button" id="trigger-close"><i class="bi bi-arrow-left-circle fa fa-angle-double-left" style="color:white;" id="left"></i></button></div></li>
+                <li><div id="side-item1"><i class="fa fa-home" id="home"></i>ホーム</div></li>
+                <li><div id="side-item2"><i class="fa fa-magic" id="setting"></i>Rec Form</div></li>
+                <li><div id="side-item3"><i class="fa fa-file" id="setting"></i>運用実績</div></li>
+                <li><div id="side-item4"><i class="fa fa-signal" id="setting"></i>相関関係</div></li>
+                <li><div id="side-item5"><i class="fa fa-shopping-cart" id="setting"></i>ポイント交換</div></li>
+            </ul>
+        </aside>
+        
+        <h1>おすすめランキング</h1>
+
+        <ul class="cards7">
+            {% for item in list_items %}
+            
+              <li class="card7 open" name="{{ item.like_title }}">
+                <div class="card__image-holder"> <img class="card__image" src="{{ item.like_img }}" alt=""> </div>
+                <div class="card-title"> <a href="#" class="toggle-info btn7">{{ item.like_rank }}
+                    <!-- <span class="left"></span>
+                    <span class="right"></span> -->
+                  </a>
+
+                    <p class="card_timecategory"><i class="fa fa-user" style="color:darkblue;"></i>　{{ item.like_teature }}</p>
+                    <p class="card_htitle">{{ item.like_title }}</p>
+                    <p><i class="fa fa-cart-plus" style="color:orange;"></i>{{item.like_price}}円</p>
+                </div>
+              </li>
+            
+            {% endfor %}
+            </ul>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/static/javascript/index.js"></script>
+        <script src="../static/javascript/index.js"></script>
+    </body>
+</html>
