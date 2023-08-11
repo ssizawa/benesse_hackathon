@@ -1,5 +1,6 @@
 # benesse_hackathon
 benesseハッカソンで個人開発したユーザのニーズや状況を考慮した教育コンテンツ推薦システム
+https://www.benesse.co.jp/fr_s/internship/udc/
 ## 推薦プロセス
 ・簡単なアンケートに答える
 
