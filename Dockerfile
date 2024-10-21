@@ -1,6 +1,6 @@
 FROM python:3.9.7-slim-buster
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/server
 ENV FLASK_APP=main
 
 COPY /app/requirements.txt ./
