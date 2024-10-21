@@ -5,7 +5,7 @@ import logging
 from sql import sql_arg
 SQLARG = sql_arg()
 
-app = Flask(__name__, static_folder='./static', template_folder='./templates')
+app = Flask(__name__, static_folder='../static', template_folder='../templates')
 
 class User:
     id: int
